@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
- body {
+body {
     height: 100%;
 }
+
 #sidebar {
     list-style: none;
     height: 100%;
@@ -61,6 +62,5 @@ a {
 }
 
 .search {
-    height: 30px;
-        
+    height: 30px;        
 }
