@@ -89,4 +89,13 @@ a {
         padding: 100px;
         width: 100%;     
     }
-}
+    #main-header {
+        padding-top: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }  
+     .avatar img {
+        border-radius: inherit;
+        
+     }
+    }
