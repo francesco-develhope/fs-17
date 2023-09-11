@@ -1,0 +1,36 @@
+section h2:first-child {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 8px;
+}
+
+section {
+  background-color: rgb(89, 232, 163);
+}
+
+#important {
+  background-color: rgb(89, 170, 232);
+}
+
+#important h3:first-of-type {
+  color: white;
+}
+
+.paragraph-xl {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+#navbar ul {
+  background-color: rgba(0, 0, 0, 0.38);
+  color: white;
+  list-style-type: none;
+}
+
+.list-item:nth-child(odd) {
+  background-color: rgba(220, 72, 72, 0.552);
+}
+
+ul {
+  text-align: center;
+}

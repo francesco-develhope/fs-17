@@ -1,0 +1,1 @@
+Aggiungi un tag <style> nel file html. Applica un background-color verde al main e rosso ai paragrafi. Il testo dei paragrafi deve essere bianco eccetto per gli elementi con classe black (se presenti) che devono avere colore nero.
