@@ -64,3 +64,15 @@ a {
 .search {
     height: 30px;        
 }
+
+/* media query */
+
+@media screen and (max-width: 992px){
+    #sidebar {
+        display: none;
+    }
+
+    #main-content {
+        
+    }
+}
