@@ -27,3 +27,16 @@ console.log(words); */
 /* Esercizio 6 */
 /* words.unshift("unshift");
 console.log(words); */
+
+/*Esercizio 7*/
+/*let mapArray = words.map((word) => word.toUpperCase());
+console.log(mapArray);*/
+
+/*Esercizio 8*/
+/*let filterArray = words.filter((word) => word.length > 5)
+console.log(filterArray);
+console.log(words) */
+
+/*Esercizio 9*/
+/*let findWord = words.find((word) => word == "limit")
+console.log(findWord)*/
