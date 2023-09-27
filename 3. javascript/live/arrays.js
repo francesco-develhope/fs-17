@@ -47,3 +47,4 @@ const centralWords = [j, k];
 console.log(centralWords); */
 /* const [word1, word2] = words.slice(2,4);
 console.log(word1, word2); */
+
