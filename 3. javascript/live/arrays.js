@@ -40,3 +40,10 @@ console.log(words) */
 /*Esercizio 9*/
 /*let findWord = words.find((word) => word == "limit")
 console.log(findWord)*/
+
+/* Esercizio 10 */
+/* let [,,j,k,] = words;
+const centralWords = [j, k];
+console.log(centralWords); */
+/* const [word1, word2] = words.slice(2,4);
+console.log(word1, word2); */
