@@ -1,0 +1,68 @@
+[
+  {
+    "Id": 0,
+    "Title": "Avatar",
+    "Year": "2009",
+    "Genre": "Action, Adventure, Fantasy",
+    "Runtime": "162 min",
+    "Director": "James Cameron",
+    "Actors": "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
+    "Language": "English, Spanish",
+    "Country": "USA, UK"
+  },
+  {
+    "Id": 1,
+    "Title": "I Am Legend",
+    "Year": "2007",
+    "Runtime": "101 min",
+    "Genre": "Drama, Horror, Sci-Fi",
+    "Director": "Francis Lawrence",
+    "Actors": "Will Smith, Alice Braga, Charlie Tahan, Salli Richardson-Whitfield",
+    "Language": "English",
+    "Country": "USA"
+  },
+  {
+    "Id": 2,
+    "Title": "300",
+    "Year": "2006",
+    "Runtime": "117 min",
+    "Genre": "Action, Drama, Fantasy",
+    "Director": "Zack Snyder",
+    "Actors": "Gerard Butler, Lena Headey, Dominic West, David Wenham",
+    "Language": "English",
+    "Country": "USA"
+  },
+  {
+    "Id": 3,
+    "Title": "The Avengers",
+    "Year": "2012",
+    "Runtime": "143 min",
+    "Genre": "Action, Sci-Fi, Thriller",
+    "Director": "Joss Whedon",
+    "Actors": "Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth",
+    "Language": "English, Russian",
+    "Country": "USA"
+  },
+  {
+    "Id": 4,
+    "Title": "The Wolf of Wall Street",
+    "Year": "2013",
+    "Runtime": "180 min",
+    "Genre": "Biography, Comedy, Crime",
+    "Director": "Martin Scorsese",
+    "Actors": "Leonardo DiCaprio, Jonah Hill, Margot Robbie, Matthew McConaughey",
+    "Language": "English, French",
+    "Country": "USA"
+  },
+  {
+    "Id": 5,
+    "Title": "Interstellar",
+    "Year": "2014",
+    "Runtime": "169 min",
+    "Genre": "Adventure, Drama, Sci-Fi",
+    "Director": "Christopher Nolan",
+    "Actors": "Ellen Burstyn, Matthew McConaughey, Mackenzie Foy, John Lithgow",
+    "Language": "English",
+    "Country": "USA, UK"
+  }
+]
