@@ -3,3 +3,6 @@
 
 # Ignore all CSS files:
 **/*.css
+
+# Ignore all JS files:
+**/*.js
