@@ -53,3 +53,13 @@ console.log(word1, word2); */
     rest.forEach((elments)=>console.log(typeof(elments)));
 }
 myFunction(1, "hello world", { name: "John Doe", age: 12 }, 32, ["banane", "lamponi"]) */
+
+const words2 = ['casa', 'telefono', 'gatto']
+/* const merged = [...words, ...words2] */
+/* console.log(merged) */
+
+function mergedArray (arr1, arr2) {
+       return [...arr1, ...arr2]
+}
+
+console.log(mergedArray(words2, words))
