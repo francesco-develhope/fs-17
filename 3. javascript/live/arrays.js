@@ -48,3 +48,8 @@ console.log(centralWords); */
 /* const [word1, word2] = words.slice(2,4);
 console.log(word1, word2); */
 
+/*Esercizio 11*/
+/* function myFunction(...rest) {
+    rest.forEach((elments)=>console.log(typeof(elments)));
+}
+myFunction(1, "hello world", { name: "John Doe", age: 12 }, 32, ["banane", "lamponi"]) */
