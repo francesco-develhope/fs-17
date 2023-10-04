@@ -13,29 +13,33 @@ class Person {
 const person = new Person ("Marco", "Bianchi", 26)
 
 console.log(person.toString())
-
 class Student extends Person{
     #courses;
+    #graduationTimestamp;
 
     constructor(name, surname, age,){
         super (name,surname,age);
     }
 
-        get courses(){
+    get courses(){
         return this.#courses;
     }
-    set courses(courseToAdd){
-        this.#courses = courseToAdd;
+
+    set courses(courses){
+        this.#courses = courses;
     }
-    
-    addCourses(arr);
 
+    get graduationTimestamp(){
+        return this.#graduationTimestamp;
+    }
 
+    set graduationTimestamp(timestamp){
+        this.#graduationTimestamp = timestamp;
+    }
 }
 
 const student=new Student('Mario','Rossi','26')
-console.log(student);
-/* const student= new Student('Mario','Rossi','26',new Date('2024-05-18'), ['math']);
+student.courses = ["math", "lingue"]
+student.graduationTimestamp = new Date("2023-05-16")
+console.log(student.courses);
 console.log(student.graduationTimestamp);
-student.addCourses(['science','italiano']
-console.log(student.courses) */
