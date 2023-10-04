@@ -15,19 +15,27 @@ const person = new Person ("Marco", "Bianchi", 26)
 console.log(person.toString())
 
 class Student extends Person{
-    constructor(name, surname, age, graduationTimestamp, courses){
+    #courses;
+
+    constructor(name, surname, age,){
         super (name,surname,age);
-        this.graduationTimestamp=graduationTimestamp;
-        this.courses = courses;
     }
-    addCourses(arr){
-        this.courses.push(...arr);
-        
+
+        get courses(){
+        return this.#courses;
     }
+    set courses(courseToAdd){
+        this.#courses = courseToAdd;
+    }
+    
+    addCourses(arr);
+
 
 }
 
-const student= new Student('Mario','Rossi','26',new Date('2024-05-18'), ['math']);
+const student=new Student('Mario','Rossi','26')
+console.log(student);
+/* const student= new Student('Mario','Rossi','26',new Date('2024-05-18'), ['math']);
 console.log(student.graduationTimestamp);
-student.addCourses(['science','italiano']);
-console.log(student.courses)
+student.addCourses(['science','italiano']
+console.log(student.courses) */
