@@ -28,7 +28,24 @@ sumAsync(8, 5)
     .catch((err) => console.log(err))
     
 
+// first promise
+let myPromise = new Promise ((resolve)=> {
+    setTimeout(()=> {
+    resolve ('Hello Promise!')
+    }, 3000)
+})
 
+myPromise 
+    .then((result)=> console.log(result))
 
+// Promise Chaining
+let mixedArr = ['marco', 24, 12, true, 87, 95]
+function cleanArray(mixedArr) {
+    return new Promise ((resolve) => {
+    let cleaned = mixedArr.filter((item)=> typeof item === 'number')
+    resolve (cleaned)
+    }) 
+} 
 
-
+cleanArray(mixedArr)
+.then((result)=>console.log(result))
