@@ -13,3 +13,17 @@ for(let key of Object.keys(person)){
     let value = person[key];
     console.log(value);
 }
+
+
+/*Destrutturazione Oggetto
+
+function objectCasual (obj) {
+    const {name, surname, age} = obj
+    console.log(name,surname, age)
+}
+
+//const value = {name: "Simone", age : 34}
+//objectCasual(value)
+
+objectCasual ({name: "Simone", surname : "Rossi", age : 34}) 
+*/
