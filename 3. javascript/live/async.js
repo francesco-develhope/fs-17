@@ -13,7 +13,7 @@ sumAsync(1, 5);*/
 /* function sumAsync(val1,val2) {
 	return new Promise ((resolve, reject) => {
 		setTimeout(() => {
-			  if (typeof(val2) === "number" && val2 > 0) {
+				if (typeof(val2) === "number" && val2 > 0) {
 			resolve(val1 + val2)
 		} else {
 			reject("Error")
@@ -42,26 +42,35 @@ myPromise
 // Promise Chaining
 let mixedArr = ['marco', 24, 12, true, 87, 95]
 function cleanArray(mixedArr) {
-	return new Promise ((resolve) => {
-		let cleaned = mixedArr.filter((item)=> typeof item === 'number')
-		resolve (cleaned)
-	}) 
-} 
+	return new Promise((resolve) => {
+		let cleaned = mixedArr.filter((item) => typeof item === 'number')
+		resolve(cleaned)
+	})
+}
 
 function filterEven(cleaned) {
-	return new Promise ((resolve, reject) => {
+	return new Promise((resolve, reject) => {
 		let evenNumbers = cleaned.filter((item) => item % 2 === 0)
-		if(evenNumbers.length > 0) {
-			resolve (evenNumbers)
+		if (evenNumbers.length > 0) {
+			resolve(evenNumbers)
 		} else {
 			reject("Array vuoto o altro")
 		}
-	})	
+	})
+}
+
+function numHigher(arr) {
+	return new Promise((resolve) => {
+		setTimeout(() => {
+			const num = Math.max(...arr);
+			resolve(num)
+		}, 1000)
+	})
 }
 
 
 
 cleanArray(mixedArr)
-	/* .then((result) => filterEven(result)) */
 	.then(filterEven)
-	.then((result)=>console.log(result))
+	.then(numHigher)
+	.then((result) => console.log(result))
