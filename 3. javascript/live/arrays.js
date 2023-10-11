@@ -2,8 +2,8 @@ const words = ["spray", "limit", "elite", "exuberant", "present"];
 
 /* Esercizio 1
  words.forEach((word)=> {
-    console.log(word)
-    console.log(word.toUpperCase())
+	console.log(word)
+	console.log(word.toUpperCase())
 })
 
  */
@@ -50,7 +50,7 @@ console.log(word1, word2); */
 
 /*Esercizio 11*/
 /* function myFunction(...rest) {
-    rest.forEach((elments)=>console.log(typeof(elments)));
+	rest.forEach((elments)=>console.log(typeof(elments)));
 }
 myFunction(1, "hello world", { name: "John Doe", age: 12 }, 32, ["banane", "lamponi"]) */
 
@@ -61,6 +61,6 @@ console.log(merged)  */
  
 /* Esercizio13 */
 /* function mergedArray (arr1, arr2) {
-       return [...arr1, ...arr2]
+	   return [...arr1, ...arr2]
 }
 console.log(mergedArray(words2, words)) */
