@@ -28,3 +28,16 @@ asynFetch() */
   })
   .then(val => console.log(val))
   .catch(error => console.error(error)) */
+
+fetch('https://api.api-ninjas.com/v1/exercises')
+.then((res) => /* {
+  if(res.ok){
+    return res.json();
+  } else {
+    throw new Error(res.json());
+  }
+} */
+/* console.log(res) */
+res.json())
+.then(val => console.log(val))
+.catch(error => console.error(error.error))
