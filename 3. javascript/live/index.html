@@ -4,8 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .blue {
+      color: blue;
+    }
+  </style>
 </head>
 <body>
-  <script src="fetch.js"></script>
+  <h1 id="title">
+    Hello World
+  </h1>
+  <!-- Importare un file js esterno -->
+  <!-- <script src="fetch.js"></script> -->  
+  
+  <!-- Scrivere js direttamente nel mio documento -->
+  <script>
+   const pageTitle = document.getElementById("title");  
+
+   // localStorage
+   const views = localStorage.getItem("views");
+   localStorage.setItem("views", Number(views) + 1);
+
+   if(!views) {
+     document.body.append("Prima volta qui, benvenuto!")
+    } else {
+     document.body.append("Bentornato!")
+   }
+  </script>
 </body>
 </html>
