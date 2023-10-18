@@ -4,32 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
+  <style>       
+    html, body {     
+      margin: 0;
+      height: 100%;
+    }
+
     .blue {
       color: blue;
+    }
+
+    main {
+      min-height: 60%;
     }
   </style>
 </head>
 <body>
-  <h1 id="title">
-    Hello World
-  </h1>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <ul class="nav__items">
+        <li class="nav__item"><a href="#">Link</a></li>
+        <li class="nav__item"><a href="#">Link</a></li>
+        <li class="nav__item"><a href="#">Link</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 id="title">
+      Hello
+    </h1>
+    <input type="email">
+  </main>
+  <footer id="footer">     
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul class="footer-nav__items">
+        <li class="footer-nav__item"><a href="#">Footer link</a></li>
+        <li class="footer-nav__item"><a href="#">Footer link</a></li>
+        <li class="footer-nav__item"><a href="#">Footer link</a></li>
+      </ul>
+    </nav>    
+    <section>
+      <form id="newsletter">
+        <h4 class="newsletter__title">Isctiviti alla newsletter</h4>
+        <input class="newsletter__input" type="email">
+      </form>
+    </section>
+  </footer>
+ 
   <!-- Importare un file js esterno -->
   <!-- <script src="fetch.js"></script> -->  
   
   <!-- Scrivere js direttamente nel mio documento -->
   <script>
-   const pageTitle = document.getElementById("title");  
+    const pageTitle = document.getElementById("title");  
 
-   // localStorage
-   const views = localStorage.getItem("views");
-   localStorage.setItem("views", Number(views) + 1);
+    // localStorage
+    const views = localStorage.getItem("views");
+    localStorage.setItem("views", Number(views) + 1);
 
-   if(!views) {
-     document.body.append("Prima volta qui, benvenuto!")
+    if(!views) {
+      pageTitle.innerText += ", stranger!"
     } else {
-     document.body.append("Bentornato!")
-   }
+      pageTitle.innerText += ", nice to see you again!"
+    }
   </script>
 </body>
 </html>
