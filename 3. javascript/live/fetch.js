@@ -44,7 +44,7 @@ fetch('https://api.api-ninjas.com/v1/exercises')
   */
 
   //Check the content type
-   fetch ("https://jsonplaceholder.typicode.com/") 
+/*    fetch ("https://jsonplaceholder.typicode.com/") 
     .then((response) =>  { 
       const contentType = response.headers.get("content-type");
       if ((contentType.includes("application/json"))){
@@ -56,4 +56,27 @@ fetch('https://api.api-ninjas.com/v1/exercises')
       }
     })
     .then((data) => console.log(data))
-    .catch((error) => console.log(error) )
+    .catch((error) => console.log(error) ) */
+
+    // Post request
+
+const data = {
+  title: "Titolo",
+  body:"corpo"
+}
+fetch ("https://jsonplaceholder.typicode.com/posts/", {
+  method: 'POST',
+  body: JSON.stringify(data),
+  headers: {
+    'Content-type' : 'application/json'
+  }
+})
+.then ((response) => {
+  if(response.ok) {
+    return response.json()
+  } else {
+    throw new Error("request don't accepted")
+  }
+})
+.then((data) => console.log(data))
+.catch((error) => console.log(error))
