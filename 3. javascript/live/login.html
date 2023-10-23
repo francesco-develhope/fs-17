@@ -23,23 +23,22 @@ const submit = document.querySelector('button')
 submit.addEventListener('click', (event)=> {
   event.preventDefault()
   async function getUser() {
-    const res = await fetch ("https://jsonplaceholder.typicode.com/users/")
-    const data = await res.json()
-   /*  userEmail */
-    const user = data.find((findUser)=> 
-      userEmail.value ===findUser.email || userEmail.value===findUser.username)
+    const res = await fetch ("https://jsonplaceholder.typicode.com/users/?username=" + userEmail.value)
+    const users = await res.json()
+    const user = users[0];
     if(user) {
-     form.remove()
-     const h1 = document.createElement('h1')
-     h1.textContent = `Benvenuto ${user.name}`
-     body.appendChild(h1)
-  } else {
-    const p = document.createElement('p')
-    p.textContent = 'Error, user not found'
-    form.appendChild(p)
+      form.remove()
+      const h1 = document.createElement('h1')
+      h1.textContent = `Benvenuto ${user.name}`
+      const body = document.body
+      body.appendChild(h1)
+    } else {
+      const p = document.createElement('p')
+      p.textContent = 'Error, user not found'
+      form.appendChild(p)
+    }
   }
-}
-getUser()
+  getUser()
 }) 
 </script>
 </html>
