@@ -1,5 +1,5 @@
-import { Age } from "./Age";
-import { Avatar } from "./Avatar";
+import { Age } from "../age/Age";
+import { Avatar } from "../avatar/Avatar";
 
 export function HelloWorld({ name = "stranger", age }) {
   return (
